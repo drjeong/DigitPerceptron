@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{CEF32066-E19B-4A92-96D5-BA9D65E7D5AE}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>DigitPerceptron</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)DigitPerceptron;$(SolutionDir)DigitPerceptron\PCA;$(SolutionDir)DigitPerceptron\GLPCA;$(SolutionDir)DigitPerceptron\DM;$(SolutionDir)DigitPerceptron\Ext;$(SolutionDir)DigitPerceptron\Lib;$(SolutionDir)DigitPerceptron\Lib\ALGIB;$(SolutionDir)DigitPerceptron\Lib\freeglut-3.2.1\include\GL;$(SolutionDir)DigitPerceptron\Lib\ftgl;$(SolutionDir)DigitPerceptron\Lib\freetype;$(SolutionDir)DigitPerceptron\Lib\CSVParser;$(SolutionDir)DigitPerceptron\Lib\tsne</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>freeglut.lib;ftgl_x64.lib;CSVParser.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)DigitPerceptron\Lib\freeglut-3.2.1\lib\x64;$(SolutionDir)DigitPerceptron\Lib\CSVParser\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)DigitPerceptron;$(SolutionDir)DigitPerceptron\PCA;$(SolutionDir)DigitPerceptron\GLPCA;$(SolutionDir)DigitPerceptron\DM;$(SolutionDir)DigitPerceptron\Ext;$(SolutionDir)DigitPerceptron\Lib;$(SolutionDir)DigitPerceptron\Lib\ALGIB;$(SolutionDir)DigitPerceptron\Lib\freeglut-3.2.1\include\GL;$(SolutionDir)DigitPerceptron\Lib\ftgl;$(SolutionDir)DigitPerceptron\Lib\freetype;$(SolutionDir)DigitPerceptron\Lib\CSVParser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)DigitPerceptron\Lib\freeglut-3.2.1\lib\x64;$(SolutionDir)DigitPerceptron\Lib\CSVParser</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;ftgl_x64.lib;CSVParser.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandWnd.h" />
+    <ClInclude Include="DigitPatternInfoDlg.h" />
+    <ClInclude Include="DigitPerceptron.h" />
+    <ClInclude Include="DigitPerceptronDlg.h" />
+    <ClInclude Include="DigitPerceptronViz.h" />
+    <ClInclude Include="DM\DigitPattern.h" />
+    <ClInclude Include="DM\ClutterManager.h" />
+    <ClInclude Include="DM\DataFunctions.h" />
+    <ClInclude Include="DM\DataManager.h" />
+    <ClInclude Include="DM\InteractionManager.h" />
+    <ClInclude Include="Ext\2DBarGraph.h" />
+    <ClInclude Include="Ext\ColorSpace.h" />
+    <ClInclude Include="Ext\ControlPos.h" />
+    <ClInclude Include="Ext\ConvexHull.h" />
+    <ClInclude Include="Ext\ConvexHull2.h" />
+    <ClInclude Include="Ext\DPoint.h" />
+    <ClInclude Include="Ext\DRect.h" />
+    <ClInclude Include="Ext\ftGLFontWrapper.h" />
+    <ClInclude Include="Ext\gl2ps.h" />
+    <ClInclude Include="Ext\graham.h" />
+    <ClInclude Include="Ext\GraphObject.h" />
+    <ClInclude Include="Ext\hpc_helpers.hpp" />
+    <ClInclude Include="Ext\Portal.h" />
+    <ClInclude Include="Ext\WndApi_Sys.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="GLPCA\GLDraw.h" />
+    <ClInclude Include="GLPCA\GLfunctions.h" />
+    <ClInclude Include="GLPCA\GLPCA.h" />
+    <ClInclude Include="GLPCA\GLPCASpace.h" />
+    <ClInclude Include="GLPCA\GLScissorTest.h" />
+    <ClInclude Include="GLPCA\GLView.h" />
+    <ClInclude Include="GLPCA\GLWnd.h" />
+    <ClInclude Include="Lib\ALGIB\alglibinternal.h" />
+    <ClInclude Include="Lib\ALGIB\alglibmisc.h" />
+    <ClInclude Include="Lib\ALGIB\ap.h" />
+    <ClInclude Include="Lib\ALGIB\dataanalysis.h" />
+    <ClInclude Include="Lib\ALGIB\diffequations.h" />
+    <ClInclude Include="Lib\ALGIB\fasttransforms.h" />
+    <ClInclude Include="Lib\ALGIB\integration.h" />
+    <ClInclude Include="Lib\ALGIB\interpolation.h" />
+    <ClInclude Include="Lib\ALGIB\linalg.h" />
+    <ClInclude Include="Lib\ALGIB\optimization.h" />
+    <ClInclude Include="Lib\ALGIB\solvers.h" />
+    <ClInclude Include="Lib\ALGIB\specialfunctions.h" />
+    <ClInclude Include="Lib\ALGIB\statistics.h" />
+    <ClInclude Include="Lib\tsne\sptree.h" />
+    <ClInclude Include="Lib\tsne\vptree.h" />
+    <ClInclude Include="PCA\mathfunctions.h" />
+    <ClInclude Include="PCA\OnlineSVD.h" />
+    <ClInclude Include="PCA\PCA.h" />
+    <ClInclude Include="PCA\PCASignFlipController.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StringWrapper.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandWnd.cpp" />
+    <ClCompile Include="DigitPatternInfoDlg.cpp" />
+    <ClCompile Include="DigitPerceptron.cpp" />
+    <ClCompile Include="DigitPerceptronDlg.cpp" />
+    <ClCompile Include="DigitPerceptronViz.cpp" />
+    <ClCompile Include="DM\DigitPattern.cpp" />
+    <ClCompile Include="DM\ClutterManager.cpp" />
+    <ClCompile Include="DM\DataFunctions.cpp" />
+    <ClCompile Include="DM\DataManager.cpp" />
+    <ClCompile Include="DM\InteractionManager.cpp" />
+    <ClCompile Include="Ext\2DBarGraph.cpp" />
+    <ClCompile Include="Ext\ColorSpace.cpp" />
+    <ClCompile Include="Ext\ControlPos.cpp" />
+    <ClCompile Include="Ext\ConvexHull.cpp" />
+    <ClCompile Include="Ext\ConvexHull2.cpp" />
+    <ClCompile Include="Ext\ftGLFontWrapper.cpp" />
+    <ClCompile Include="Ext\gl2ps.cpp" />
+    <ClCompile Include="Ext\GraphObject.cpp" />
+    <ClCompile Include="Ext\Portal.cpp" />
+    <ClCompile Include="Ext\WndApi_Sys.cpp" />
+    <ClCompile Include="GLPCA\GLDraw.cpp" />
+    <ClCompile Include="GLPCA\GLfunctions.cpp" />
+    <ClCompile Include="GLPCA\GLPCA.cpp" />
+    <ClCompile Include="GLPCA\GLPCASpace.cpp" />
+    <ClCompile Include="GLPCA\GLScissorTest.cpp" />
+    <ClCompile Include="GLPCA\GLView.cpp" />
+    <ClCompile Include="GLPCA\GLWnd.cpp" />
+    <ClCompile Include="Lib\ALGIB\alglibinternal.cpp" />
+    <ClCompile Include="Lib\ALGIB\alglibmisc.cpp" />
+    <ClCompile Include="Lib\ALGIB\ap.cpp" />
+    <ClCompile Include="Lib\ALGIB\dataanalysis.cpp" />
+    <ClCompile Include="Lib\ALGIB\diffequations.cpp" />
+    <ClCompile Include="Lib\ALGIB\fasttransforms.cpp" />
+    <ClCompile Include="Lib\ALGIB\integration.cpp" />
+    <ClCompile Include="Lib\ALGIB\interpolation.cpp" />
+    <ClCompile Include="Lib\ALGIB\linalg.cpp" />
+    <ClCompile Include="Lib\ALGIB\optimization.cpp" />
+    <ClCompile Include="Lib\ALGIB\solvers.cpp" />
+    <ClCompile Include="Lib\ALGIB\specialfunctions.cpp" />
+    <ClCompile Include="Lib\ALGIB\statistics.cpp" />
+    <ClCompile Include="Lib\tsne\sptree.cpp" />
+    <ClCompile Include="PCA\mathfunctions.cpp" />
+    <ClCompile Include="PCA\OnlineSVD.cpp" />
+    <ClCompile Include="PCA\PCA.cpp" />
+    <ClCompile Include="PCA\PCASignFlipController.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DigitPerceptron.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DigitPerceptron.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DigitPerceptron.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

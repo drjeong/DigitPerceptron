@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ext Files">
+      <UniqueIdentifier>{e8142e43-b649-4da9-9d3e-e4cea98362c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLPCA  Files">
+      <UniqueIdentifier>{bac3dcf5-eba4-4bfc-a471-660a42fc3f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataManagement Files">
+      <UniqueIdentifier>{5a537f99-57b3-45ca-88e2-297854d72a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCA Files">
+      <UniqueIdentifier>{6ce7e4cb-4afd-4905-8049-daa105d41559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DigitPerceptron Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="LIB files">
+      <UniqueIdentifier>{3ef2aa57-3ea3-4027-8d86-c3517393738a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB files\ALGLIB">
+      <UniqueIdentifier>{2a0bbc0f-0b81-4308-8098-64a7f67f16f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB files\tSNE">
+      <UniqueIdentifier>{2afe0c64-043f-4908-a2d4-da49e03415cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLPCA\GLPCA.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLWnd.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\Portal.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DM\ClutterManager.h">
+      <Filter>DataManagement Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\DPoint.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\DRect.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\ftGLFontWrapper.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\ColorSpace.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLPCASpace.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLDraw.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLView.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA\mathfunctions.h">
+      <Filter>PCA Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA\OnlineSVD.h">
+      <Filter>PCA Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA\PCA.h">
+      <Filter>PCA Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA\PCASignFlipController.h">
+      <Filter>PCA Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\gl2ps.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\ConvexHull.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\ConvexHull2.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\graham.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLfunctions.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DM\DataFunctions.h">
+      <Filter>DataManagement Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandWnd.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitPatternInfoDlg.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitPerceptron.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitPerceptronDlg.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitPerceptronViz.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringWrapper.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DM\DataManager.h">
+      <Filter>DataManagement Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\WndApi_Sys.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\hpc_helpers.hpp">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DM\InteractionManager.h">
+      <Filter>DataManagement Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPCA\GLScissorTest.h">
+      <Filter>GLPCA  Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\alglibinternal.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\alglibmisc.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\ap.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\dataanalysis.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\diffequations.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\fasttransforms.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\integration.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\interpolation.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\linalg.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\optimization.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\solvers.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\specialfunctions.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\ALGIB\statistics.h">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\ControlPos.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DM\DigitPattern.h">
+      <Filter>DataManagement Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\tsne\sptree.h">
+      <Filter>LIB files\tSNE</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib\tsne\vptree.h">
+      <Filter>LIB files\tSNE</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\GraphObject.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ext\2DBarGraph.h">
+      <Filter>Ext Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DigitPerceptron.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitPerceptronDlg.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringWrapper.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitPatternInfoDlg.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandWnd.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitPerceptronViz.cpp">
+      <Filter>DigitPerceptron Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLPCA.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLWnd.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\Portal.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DM\ClutterManager.cpp">
+      <Filter>DataManagement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\ftGLFontWrapper.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\ColorSpace.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLPCASpace.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLDraw.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLView.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PCA\mathfunctions.cpp">
+      <Filter>PCA Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PCA\OnlineSVD.cpp">
+      <Filter>PCA Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PCA\PCA.cpp">
+      <Filter>PCA Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PCA\PCASignFlipController.cpp">
+      <Filter>PCA Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\gl2ps.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\ConvexHull.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\ConvexHull2.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DM\DataFunctions.cpp">
+      <Filter>DataManagement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DM\DataManager.cpp">
+      <Filter>DataManagement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\WndApi_Sys.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DM\InteractionManager.cpp">
+      <Filter>DataManagement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLScissorTest.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\alglibinternal.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\alglibmisc.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\ap.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\dataanalysis.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\diffequations.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\fasttransforms.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\integration.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\interpolation.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\linalg.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\optimization.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\solvers.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\specialfunctions.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\ALGIB\statistics.cpp">
+      <Filter>LIB files\ALGLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\ControlPos.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DM\DigitPattern.cpp">
+      <Filter>DataManagement Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPCA\GLfunctions.cpp">
+      <Filter>GLPCA  Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib\tsne\sptree.cpp">
+      <Filter>LIB files\tSNE</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\2DBarGraph.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ext\GraphObject.cpp">
+      <Filter>Ext Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DigitPerceptron.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DigitPerceptron.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DigitPerceptron.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
