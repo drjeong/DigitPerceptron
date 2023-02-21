@@ -8,3 +8,7 @@ It uses multiple 64bit libraries. All necessary library files are included under
 - freeglut 3.2.1 (for OpenGL rendering)
 - ALGLIB 3.10.0  (for SVD computation)
 - FTGL & FreeType (for text rendering on GL space)
+
+With the designed tool, the following paper has been published. 
+- Dong H. Jeong, Jin-Hee Cho, Feng Chen, Audun Josang, Soo-Yeon Ji, Active Learning on Neural Networks through Interactive Generation of Digit Patterns and Visual Representation, 13th IEEE Integrated STEM Education Conference, 2023
+
