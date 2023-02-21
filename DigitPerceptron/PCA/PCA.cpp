@@ -12,8 +12,8 @@
 #include <PCA/mathfunctions.h>
 #include <Eigen3.3.7/SVD>
 
-#include "ap.h"
-#include "linalg.h"
+//#include "ap.h"
+//#include "linalg.h"
 //#include "OptionsDlg.h"
 
 
