@@ -13,14 +13,9 @@
 #define HIDDENNODESIZE 48
 #define OUTPUTNODESIZE 10
 
-// old parameters
-//#define LEARNING_RATE 0.7	// learning rate
-//#define MOMENTUM_RATE 0.1
-//#define ERROR_RATE 0.0001
-
 #define LEARNING_RATE 0.1	// learning rate
 #define MOMENTUM_RATE 0.7
-#define ERROR_RATE 0.02
+#define ERROR_RATE 0.05
 
 #define sigmoid(x)  (1./  (1 + exp(-x)) )
 #define sigmoid_derivative(x)  (sigmoid(x) * (1 - sigmoid(x)))
