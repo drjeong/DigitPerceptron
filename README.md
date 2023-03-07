@@ -1,4 +1,4 @@
-# DigitPerceptron
+# DigitPerceptron (neural network trainer)
 Interactive Digit Recognition
 
 This is created with Visual Studio 2019 using VC++.
