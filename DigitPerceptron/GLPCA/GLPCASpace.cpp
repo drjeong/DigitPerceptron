@@ -566,9 +566,16 @@ void CGLPCASpace::DrawGLScene()
 
 	m_glRenderingRegion = *this;
 	m_glRenderingRegion.DeflateRect(5, 5);
+
+	// If glyph size is increase, its boudary needs to be updated as well.
+	CDataManager* pDM = ((CDigitPerceptronDlg*)AfxGetMainWnd())->GetDataManager();
+	double dGlyphSizeRatio = pDM->GetGlyphSize();
+	double ratio = dGlyphSizeRatio * (m_dPadWidth / m_dInitPadWidth);
+	m_glRenderingRegion.DeflateRect(ratio / 2., ratio / 2);
+
 	//// draw rendering region (used for debugging purpose)
-	glColor4f(0.5f, 0.0f, 0.0f, 0.3f);
-	drawObject(m_glRenderingRegion, GL_LINE_STRIP);
+	//glColor4f(0.5f, 0.0f, 0.0f, 0.3f);
+	//drawObject(m_glRenderingRegion, GL_LINE_STRIP);
 	
 	UpdateDataRange();
 

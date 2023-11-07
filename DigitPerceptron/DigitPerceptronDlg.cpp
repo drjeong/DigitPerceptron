@@ -457,7 +457,16 @@ void CDigitPerceptronDlg::OnFileSavePatternFile()
 		m_szDigitPatternFileName = fileDlg.GetFileName();
 		UpdateData(FALSE);
 
+		if (m_bPatternDataModified == TRUE) {
+			// if pattern data has been modified,
+			// running NN again to update NN 
+			CWaitCursor wait;
+			NNProcessingAllPatterns();
+		}
+
 		SavePatternCSVFormatFile(m_szDigitPatternFilePathName);
+
+		AfxMessageBox(_T("Saving is done!"));
 
 		m_bPatternDataModified = FALSE;
 	}
