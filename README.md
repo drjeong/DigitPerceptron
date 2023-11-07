@@ -17,6 +17,8 @@ The neural network trainer system consists of two layouts – digit pattern gene
 
 Digit Pattern Generator includes a pattern grid (i) with multiple control panels (ii) $\sim$ (v). The pattern grid allows the user to create digit patterns (i.e., 0 $\sim$ 9) by clicking each cell in the pattern grid. It has 12 × 8 grid cells representing a digit pattern. Each cell holds binary information as 1 or 0. It shows the size of NNs, including nodes in input, hidden, and output layers (ii). Two list boxes have been added to keep all created digit patterns and the total number of patterns representing each digit in (iii) and (iv), respectively. Real-time training and testing of NNs are handled with the control buttons (v). The result of the recognized digit pattern with NN appears with probability distributions (vi). Visual Analyzer represents user-generated digit patterns in a 2D display space by applying PCA computation. 
 
+For testing multiple neural network patterns, neural network tester (https://github.com/drjeong/DigitRecognitionTester) can be used. 
+
 
 With the designed tool, the following paper has been published. 
 - Dong H. Jeong, Jin-Hee Cho, Feng Chen, Audun Josang, Soo-Yeon Ji, Active Learning on Neural Networks through Interactive Generation of Digit Patterns and Visual Representation, 13th IEEE Integrated STEM Education Conference, 2023
