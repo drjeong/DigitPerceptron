@@ -22,3 +22,5 @@ For testing multiple neural network patterns, neural network tester (https://git
 
 With the designed tool, the following paper has been published. 
 - Dong H. Jeong, Jin-Hee Cho, Feng Chen, Audun Josang, Soo-Yeon Ji, Active Learning on Neural Networks through Interactive Generation of Digit Patterns and Visual Representation, 13th IEEE Integrated STEM Education Conference, 2023
+
+https://www.youtube.com/watch?v=bycS2-FjQk4
